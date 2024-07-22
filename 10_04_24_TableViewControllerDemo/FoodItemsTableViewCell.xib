@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="FoodItemsTableViewCell" customModule="_0_04_24_TableViewControllerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="244" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="244" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7N-iy-SyM">
+                        <rect key="frame" x="20" y="10" width="80" height="20"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="XtD-jX-sr6"/>
+                            <constraint firstAttribute="width" constant="80" id="mko-6S-cr6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-Zp-klQ">
+                        <rect key="frame" x="130" y="10" width="80" height="20"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAm-40-UdD">
+                        <rect key="frame" x="20" y="60" width="200" height="20"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="LgN-NZ-FFq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F7N-iy-SyM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0X1-hP-FqH"/>
+                    <constraint firstItem="F7N-iy-SyM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="CGH-Ph-7LQ"/>
+                    <constraint firstItem="F7N-iy-SyM" firstAttribute="height" secondItem="hAm-40-UdD" secondAttribute="height" id="D9Z-ya-nyO"/>
+                    <constraint firstItem="F7N-iy-SyM" firstAttribute="height" secondItem="IIu-Zp-klQ" secondAttribute="height" id="OUG-Jd-A4V"/>
+                    <constraint firstItem="F7N-iy-SyM" firstAttribute="width" secondItem="IIu-Zp-klQ" secondAttribute="width" id="WS9-nW-7JL"/>
+                    <constraint firstItem="hAm-40-UdD" firstAttribute="top" secondItem="F7N-iy-SyM" secondAttribute="bottom" constant="30" id="XQS-lM-SSS"/>
+                    <constraint firstItem="F7N-iy-SyM" firstAttribute="top" secondItem="IIu-Zp-klQ" secondAttribute="top" id="es6-yr-gKf"/>
+                    <constraint firstItem="hAm-40-UdD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pN8-qe-lK2"/>
+                    <constraint firstItem="IIu-Zp-klQ" firstAttribute="leading" secondItem="F7N-iy-SyM" secondAttribute="trailing" constant="30" id="z2x-cN-aM0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="foodItemDescription" destination="hAm-40-UdD" id="DUr-zd-qiL"/>
+                <outlet property="foodItemPrice" destination="IIu-Zp-klQ" id="9Qd-zi-VuI"/>
+                <outlet property="foodItemTitle" destination="F7N-iy-SyM" id="fx4-1Q-wkr"/>
+            </connections>
+            <point key="canvasLocation" x="71.755725190839698" y="-13.028169014084508"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
